@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Diwali 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #ffe4ec, #e9ddff, #fff1d6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  color: #704c68;
+}
+
+.card {
+  background: rgba(255,255,255,0.78);
+  padding: 30px 22px;
+  border-radius: 25px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 10px 35px #b99ab955;
+  border: 2px solid white;
+}
+
+h1 {
+  color: #d66b98;
+  font-size: 32px;
+}
+
+.photo-frame {
+  width: 220px;
+  height: 240px;
+  margin: 20px auto;
+  padding: 9px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #b99ab955;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.message {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #795b76;
+}
+
+button {
+  background: #e99ab8;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 12px;
+}
+
+#surprise {
+  display: none;
+  color: #c45b8b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.footer {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #aa83a3;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+
+  <h1>✨ Happy Diwali ✨</h1>
+
+  <p>A little surprise for my favourite person 💗</p>
+
+  <div class="photo-frame">
+    <img src="photo.jpg" alt="Our favourite memory">
+  </div>
+
+  <div class="message">
+    Dear Best Friend,
+
+    <p>
+      May your life always shine brighter
+      than the beautiful Diwali lights.
+      May happiness, love and success
+      follow you everywhere.
+    </p>
+
+    <p>
+      Thank you for being a special part
+      of my life. Stay happy and keep smiling!
+    </p>
+  </div>
+
+  <button onclick="showSurprise()">
+    Open Your Surprise 💌
+  </button>
+
+  <div id="surprise">
+    You are not just a friend,
+    you are a beautiful memory
+    in my life. 🥹💗
+    <br><br>
+    Lots of love! 🌷
+  </div>
+
+  <div class="footer">
+    Made with love, just for you ♡
+  </div>
+
+</div>
+
+<script>
+function showSurprise() {
+  document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
